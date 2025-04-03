@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP Problem Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/python.min.js"></script>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <div class="title-container">
+                <h1>Competitive Programming</h1>
+                <h1 class="gradient-text">Problem Solver</h1>
+            </div>
+            <p class="subtitle">Transform your coding challenges into solutions</p>
+        </header>
+
+        <main>
+            <div class="glass-card question-card">
+                <textarea 
+                    id="questionInput" 
+                    placeholder="Enter your competitive programming question here..."
+                    rows="4"
+                ></textarea>
+                <button id="submitBtn" onclick="submitQuestion()">
+                    <span class="button-content">
+                        <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2"/>
+                        </svg>
+                        Solve Problem
+                    </span>
+                </button>
+            </div>
+
+            <div id="loadingIndicator" class="loading-indicator hidden">
+                <div class="spinner"></div>
+                <p>Crafting your solution with precision...</p>
+            </div>
+
+            <div id="resultsContainer" class="results-container hidden">
+                <div id="analysis" class="glass-card result-card">
+                    <div class="card-header">
+                        <div class="header-dot"></div>
+                        <h2>Problem Analysis</h2>
+                    </div>
+                    <div class="content"></div>
+                </div>
+
+                <div id="solutions" class="glass-card result-card">
+                    <div class="card-header">
+                        <div class="header-dot"></div>
+                        <h2>Solutions</h2>
+                    </div>
+                    <div class="solutions-content"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
