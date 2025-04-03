@@ -1,10 +1,16 @@
 # Competitive Programming Code Generation 🚀
 ## INHERITANCE'25
 
+![image](https://github.com/user-attachments/assets/d6ae9c78-8cc3-4a23-a8ed-7cf1735d5ef5)
+
+
 ## Overview
 This project introduces a robust, multi-agent system designed to analyze and solve competitive programming (CP) problems while generating comprehensive and edge-case test cases. With a curated database of over **450+ competitive programming problems**, the framework captures detailed problem descriptions, constraints, examples, and solution strategies across various complexity levels, including brute force, intermediate, and optimal approaches.
 
 By constructing a dynamic knowledge graph and utilizing Graph-RAG (Retrieval-Augmented Generation), the system retrieves and synthesizes problem insights to develop efficient solution pipelines. Through agent collaboration, it automates the problem-solving process from analysis to code generation.
+
+
+![code_gen_architecture](https://github.com/user-attachments/assets/624f1551-eacc-4d46-93ce-ef5250850e2a)
 
 ## System Architecture 🧩
 ### Problem Database
